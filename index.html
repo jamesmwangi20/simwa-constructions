@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint"
+          content="width=device-width,
+initial-scale=1.0">
+    <title>SIMWA CONSTRUCTIONS COMPANY LIMITED</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet"href="style.css">
+</head>
+
+<!--FLOATING WHATSAPP-->
+<a href="https://wa.me/0798797309"
+   class="floating-whatsapp"></a>
+
+<!--FOOTER-->
+<footer>
+    <p>&copy;2026 Simwa Company Constructions. All Rights Served.</p>
+</footer>
+
+<script src="https:/unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('.about',{
+       distance:'50px',
+       duration:1000,
+       origin:'bottom',
+       interval:200});
+    ScrollReveal().reveal('.service-card',{
+       distance:'40px',
+       duration:1000,
+       origin:'bottom',
+       interval:150})
+    ScrollReveal().reveal('.projects-grid img',{
+       distance:'30px',
+       duration:900,
+       origin:'bottom',
+       interval:150});
+</script>
+
+<script>
+    const menuToggle =
+    document.getElementById('menu-toggle');
+    const navLinks =
+    document.getElementById('nav-links');
+
+    menuToggle.onclick = () => {
+    navLinks.classList.toggle('active');};
+
+    const counters=
+    document.querySelectorAll('.counter');
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+         const target =
+    +counter.getAttribute('data=target');
+      const count = +counter.innerText;
+      const increment = target / 100;
+
+      if (count < target) {
+          counter.innerText =
+    Math.ceil(count + increment);
+              setTimeout(updateCount, 20);
+    } else {
+        counter.innerText = target;
+    }
+    };
+    updateCount();
+    });
+</script>
+<!--JAVASCRIPT GOES HERE-->
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
+const navItems = document.querySelectorAll('#nav-links a');
+
+menuToggle.onclick = () => {
+    menuToggle.classList.toggle('active');
+    navLinks.classList.toggle('active');
+};
+
+navItems.forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        navLinks.classList.remove('active');
+    });
+});
+</script>
+
+
+<div id="lightbox" class="lightbox"
+     onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<body>
+        <!--HEADER-->
+<header>
+    <h1>
+        SIMWA CONSTRUCTION COMPANY
+    </h1>
+   <div class="menu-toggle"
+        id="menu-toggle">&#9776</div>
+
+     <nav id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Services</a>
+        <a href="#projects">projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+
+     <!--HERO SECTION-->
+<section class="hero" id="home">
+    <h2>Modern Construction Solutions</h2>
+    <p>Building-Renovations - Plumbing - Electrical - General Construction Work</p>
+    <a href="https://wa.me/254798797309" class="btn get-quote">&#128172GET A QUOTE</a>
+
+</section>
+
+<!--About Section-->
+<section class="about" id="about">
+    <h2>About Us</h2>
+    <p>
+        Simwa Company Constructions is a modern construction company dedicated to delivering quality building solutions.
+        We specialize in building,renovations,plumbing,electrical fitting and general construction work with a strong focus on professionalism, safety and client satisfaction.
+    </p>
+
+</section>
+
+<!--Service Section-->
+<section class="services" id="service">
+    <h2>Our Services</h2>
+
+    <div class="services-grid">
+        <div class="service-card">
+            <h3>Building Construction</h3>
+            <p>Residential and commercial construction projects built with quality and precision.</p>
+        </div>
+        <div class="service-card">
+            <h3>Renovations</h3>
+            <p>Modern remodeling and upgrades to improve comfort, style and property value.</p>
+        </div>
+        <div class="service-card">
+            <h3>Plumbing</h3>
+            <p>Professional plumbing installation, maintenance, and repair services.</p>
+        </div>
+        <div class="service-card">
+            <h3>General Construction Work</h3>
+            <p>Reliable construction services tailored to meet your project needs.</p>
+        </div>
+
+    </div>
+</section>
+
+<!--PROJECT GALLERY-->
+<section class="projects" id="projects">
+    <h2>Our Projects</h2>
+    <div class="project-grid">
+        <img src="images/project1.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project2.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project3.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project4.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project5.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project6.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project7.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project8.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project9.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project10.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project11.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project12.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project13.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project14.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project15.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project16.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project17.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project18.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project19.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project20.jpeg"onclick="openLightbox(this.src">
+        <img src="images/project21.jpeg"onclick="openLightbox(this.src">
+       <img src="images/project22.jpeg"onclick="openLightbox(this.src">
+
+    </div>
+</section>
+<section class="stats">
+    <div class="stat">
+        <h3 class="counter"
+            data-target="120">100</h3>
+        <p>Projects Completed</p>
+    </div>
+
+    <div class="Stat">
+        <h3 class="counter"
+            data-target="50">30</h3>
+        <p>Years Experience</p>
+    </div>
+
+    <div class="stat">
+        <h3 class="counter"
+        data-target="95">80</h3>
+        <p>Happy Clients</p>
+    </div>
+
+</section>
+
+<!--CONTACT SECTION-->
+<section class="contact" id="contact">
+    <h2>CONTACT US</h2>
+    <p>PHONE:+254720616942 / +254798797309 / +254720956293</p>
+    <p>EMAIL:mwgijames@gmail.com</p>
+    <p>Location: Kenya,Nairobi</p>
+    <a href="https://wa.me/0798797309" class="whatsapp-btn">
+        CHAT ON WHATSAPP
+    </a>
+</section>
+</body>
+</html>
